@@ -87,7 +87,7 @@ public class Placing_Order extends JFrame {
 				 Connection con = DriverManager.getConnection(
 					        "jdbc:mysql://localhost:3306/ecommerce",
 					        "root",
-					        "Ruksana@0610"
+					        "Password"
 					    );
 				PreparedStatement ps = con.prepareStatement("insert into placeorder values( ?,?,?,?)");
 				ps.setString(1,textField.getText());
